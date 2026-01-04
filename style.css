@@ -166,17 +166,29 @@ footer {
   }
 }
 
+.read-link {
+  margin-top: 32px;
+}
+
+.read-link a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .read-button {
   display: inline-block;
   margin-top: 32px;
-  padding: 12px 20px;          /* bigger tap area */
-  border: 1px solid var(--accent);
-  border-radius: 8px;
+  padding: 14px 24px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
   color: var(--accent);
+  background: transparent;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
-  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 /* Desktop hover */
@@ -185,15 +197,15 @@ footer {
   color: #000;
 }
 
-/* Mobile-friendly tweak */
-@media (max-width: 600px) {
+/* Mobile + responsive */
+@media (max-width: 768px) {
   .read-button {
-    display: block;            /* full-width feel */
-    width: fit-content;
-    margin: 32px auto 0;       /* center it */
-    padding: 14px 24px;        /* better touch */
-    font-size: 16px;
+    display: inline-block;
+    padding: 16px 28px;
+    font-size: 17px;
   }
 }
 
-
+.read-cta {
+  margin-top: 32px;
+}
