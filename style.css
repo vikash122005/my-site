@@ -169,15 +169,31 @@ footer {
 .read-button {
   display: inline-block;
   margin-top: 32px;
-  padding: 10px 16px;
+  padding: 12px 20px;          /* bigger tap area */
   border: 1px solid var(--accent);
-  border-radius: 6px;
+  border-radius: 8px;
   color: var(--accent);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
+/* Desktop hover */
 .read-button:hover {
   background: var(--accent);
   color: #000;
 }
+
+/* Mobile-friendly tweak */
+@media (max-width: 600px) {
+  .read-button {
+    display: block;            /* full-width feel */
+    width: fit-content;
+    margin: 32px auto 0;       /* center it */
+    padding: 14px 24px;        /* better touch */
+    font-size: 16px;
+  }
+}
+
+
